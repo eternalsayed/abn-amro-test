@@ -1,0 +1,7 @@
+{
+  "name": "movie-wizard",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
