@@ -1,0 +1,9 @@
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex--spread {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
