@@ -1,6 +1,9 @@
 # TV Show Dashboard
 <img width="382" alt="image" src="https://github.com/user-attachments/assets/f69105dc-e587-4724-96ab-c6f5a2cb0f36">
 <img width="382" alt="image" src="https://github.com/user-attachments/assets/cc4f7a74-b728-41ea-be14-9a6c28ca9511">
+<img width="383" alt="image" src="https://github.com/user-attachments/assets/1429fe93-face-4b56-bc2e-672fd4893337">
+<img width="382" alt="image" src="https://github.com/user-attachments/assets/aef4667a-1fd8-43a1-9af0-39032bba4438">
+
 
 
 
