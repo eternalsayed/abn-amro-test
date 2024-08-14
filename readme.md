@@ -1,4 +1,8 @@
 # TV Show Dashboard
+<img width="382" alt="image" src="https://github.com/user-attachments/assets/f69105dc-e587-4724-96ab-c6f5a2cb0f36">
+<img width="382" alt="image" src="https://github.com/user-attachments/assets/cc4f7a74-b728-41ea-be14-9a6c28ca9511">
+
+
 
 ## Overview
 This is an assigment submission for position of Senior FE Dev at ABN Amro. It's a dummy Vue.js application that displays TV shows categorized by genres, with additional features like sorting by ratings and a search functionality. It comes with following features:
