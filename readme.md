@@ -30,10 +30,11 @@ The choice of this framework was based on below parameters:
 
 ## Running the Application
 1. Clone the repository.
-2. Install dependencies: `yarn install`
-3. Run the development server: `yarn serve`
-4. Visit `http://localhost:8080` in your browser.
-5. To build the application, run `yarn build` in the repo. It will generate the distributate in `dist` folder.
+2. If `node_modules` is present (if you downloaded zip), remove `node_modules` with `rm -rf node_modules`
+3. Install dependencies: `yarn install`
+4. Run the development server: `yarn serve`
+5. Visit `http://localhost:8080` in your browser.
+6. To build the application, run `yarn build` in the repo. It will generate the distributate in `dist` folder.
 
 Alternatively, you can see the application running at below netlify url:
 
