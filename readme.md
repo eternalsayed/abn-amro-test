@@ -6,9 +6,10 @@ This is an assigment submission for position of Senior FE Dev at ABN Amro. It's 
 - Shows you list of TV shows by genre
 - You can switch between grid and list view on the list page
 - You can switch between genres by selecting from the list
-- You can sort shows on ascending/descending ratings
+- You can sort shows on ascending/descending ratings. Default sorting is on "relevance"
 - You can view more details about the show by clicking an item in the list
 - Clicking on genre badge shows you list of shows in that genre
+- Scroll down for *infinite loading* of list (as long as content is available)
 
 ## Architecture
 The app is build with [Ionic framework](https://ionicframework.com) using Vuejs (Vue 3). I prefer to use both composition and options API due to their separate benefits.
