@@ -43,8 +43,10 @@ Alternatively, you can see the application running at below netlify url:
 ## Tests
 !!Tests are breaking due to usage of Vue v3.2.47.
 
-Even downgrading the version (to 3.2.27) didn't help due to imcompatible packages. However, basic tests are implemented which can be run using below command:
-`yarn test`
+Even downgrading the version (to 3.2.27) didn't help due to imcompatible packages. 
+However, basic unit tests are implemented which can be run using below command:
+
+`yarn test:unit`
 
 ## Node.js Version
 - This application was developed with Node.js v14.x and NPM v6.x.
