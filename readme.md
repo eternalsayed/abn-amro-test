@@ -18,10 +18,10 @@ The framework uses vue-router in it's core for routing, with additional hooks (n
 The choice of this framework was based on below parameters:
 
 - Having worked with Ionic for years, I know it's a stable framework
-- One of the best frameworks for developing cross platform apps, which means, it has inbuild styling and device support for desktop, mobile and table. Emphasis is on mobile-first approach
-- Sets up the basic minimal setup to get started with
-- Takes care of standard device ratios for styling, so the developer doesn't have to reinvent the wheel
-- Renders platform specific styles for devices, giving the app a look close to native apps
+- One of the best frameworks for developing cross platform apps, which means, it has inbuilt styling and device support for desktop, mobile and tablet. Emphasis is on mobile-first approach
+- Sets up the basic minimal app to get started with
+- Takes care of standard device ratios for breakpoints, so the developer doesn't have to reinvent the wheel
+- Renders platform specific styles for devices, giving the app a look close to the native apps
 
 ## Structure
 - `public` contains assets
