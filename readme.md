@@ -22,6 +22,7 @@ The choice of this framework was based on below parameters:
 - Sets up the basic minimal app to get started with
 - Takes care of standard device ratios for breakpoints, so the developer doesn't have to reinvent the wheel
 - Renders platform specific styles for devices, giving the app a look close to the native apps
+- Supports light and dark modes for devices
 
 ## Structure
 - `public` contains assets
