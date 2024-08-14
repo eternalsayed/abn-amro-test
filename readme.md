@@ -23,11 +23,17 @@ The choice of this framework was based on below parameters:
 - Takes care of standard device ratios for styling, so the developer doesn't have to reinvent the wheel
 - Renders platform specific styles for devices, giving the app a look close to native apps
 
+## Structure
+- `public` contains assets
+- `src` contains source code (pages, components, tests, etc.)
+- `dist` contains distributable, when built
+
 ## Running the Application
 1. Clone the repository.
 2. Install dependencies: `yarn install`
 3. Run the development server: `yarn serve`
 4. Visit `http://localhost:8080` in your browser.
+5. To build the application, run `yarn build` in the repo. It will generate the distributate in `dist` folder.
 
 Alternatively, you can see the application running at below netlify url:
 
