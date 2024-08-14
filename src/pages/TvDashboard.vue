@@ -41,7 +41,7 @@
           :debounce="400"
         />
       </ion-item-divider>
-      <template v-if="list.length && !loading">
+      <template v-if="list.length">
         <ion-row lines="none" class="ion-padding-horizontal">
           <ion-col size="4">
             <ion-select
@@ -242,7 +242,7 @@ export default {
       selected: "",
       page: 1,
       viewType: "grid",
-      sortRating: 1,
+      sortRating: 0,
     };
   },
   computed: {
@@ -256,11 +256,14 @@ export default {
           ...show,
           rating: show.rating || { average: 0 },
         }))
-        .sort((a, b) =>
-          sortRating === 1
+        .sort((a, b) => {
+          if (!sortRating) {
+            return a.score - b.score;
+          }
+          return sortRating === 1
             ? a.rating.average - b.rating.average
-            : b.rating.average - a.rating.average
-        );
+            : b.rating.average - a.rating.average;
+        });
     },
   },
   methods: {
@@ -275,7 +278,7 @@ export default {
         const result = await $api.search(selected);
         this.list = result.map((item) => ({
           ...item.show,
-          matchScore: item.score,
+          score: item.score,
         }));
         this.loading = false;
       }
@@ -284,10 +287,11 @@ export default {
       const { searchText } = this;
       if (searchText) {
         this.loading = true;
+        this.list = [];
         const result = await $api.search(searchText);
         this.list = result.map((item) => ({
           ...item.show,
-          matchScore: item.score,
+          score: item.score,
         }));
         console.log("result: ", result);
         this.loading = false;
@@ -312,7 +316,11 @@ export default {
       // const { genres } = this;
       this.loading = true;
       try {
-        const result = await $api.getShowsList(page);
+        const result = await $api
+          .getShowsList(page)
+          .then((list) =>
+            list.map((i) => ({ ...i, score: i.score || i.weight }))
+          );
         if (!page || page === 1) {
           this.list = result;
         } else {
@@ -373,6 +381,12 @@ export default {
       "Western",
     ];
     const actionSheetButtons = [
+      {
+        text: "Sort by relevance",
+        data: {
+          rating: 0,
+        },
+      },
       {
         text: "Sort by rating — Low to High",
         data: {
